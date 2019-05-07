@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dana Kovach](https://up.htmlacademy.ru/htmlcss/25/user/834173).
-* Наставник: `Неизвестно`.
+* Наставник: [Удовенко Марина](https://htmlacademy.ru/profile/id7570).
 
 ---
 
