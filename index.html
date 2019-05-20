@@ -9,7 +9,7 @@
 <header class="header">
     <div class="top-header">
         <a class="logo header-logo" href="#"><img alt="Техномарт" class="logo-img" height="22" src="img/logo-text.svg" width="137"></a>
-        <form action="" class="search-form" method="get">
+        <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
             <label for="search">Поиск:</label>
             <input class="search" id="search" name="search" type="search">
         </form>
@@ -372,5 +372,35 @@
         </p>
     </div>
 </footer>
+
+<section class="popup feedback-popup">
+    <button class="btn-close"><span class="visually-hidden">Закрыть окно</span></button>
+    <div class="popup-content">
+        <h2 class="visually-hidden">Напишите нам:</h2>
+        <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
+            <p class="input-wrapper">
+                <label for="userName" class="form-label">Ваше имя:</label>
+                <input class="form-input" type="text" id="userName" name="name" placeholder="Имя Фамилия" value="">
+            </p>
+            <p class="input-wrapper">
+                <label for="userMail" class="form-label">Ваш e-mail:</label>
+                <input class="form-input" type="email" id="userMail" name="email" placeholder="email@example.com" value="">
+            </p>
+            <p class="input-wrapper">
+                <label for="userMessage" class="form-label">Текст письма:</label>
+                <textarea class="feedback-message" id="userMessage" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <input class="btn" type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <section class="popup map-popup">
+        <button class="btn-close"><span class="visually-hidden">Закрыть окно</span></button>
+        <div class="popup-content">
+            <h2 class="visually-hidden">Мы находимся здесь:</h2>
+            <img src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
+        </div>
+    </section>
+</section>
 </body>
 </html>
