@@ -83,8 +83,83 @@
         <h2 class="inner-title">Перфораторы</h2>
 
         <section class="filter">
-            <h2 class="visually-hidden">Фильтры</h2>
-            <!--фильтры-->
+            <h2 class="filter-title">Фильтр:</h2>
+            <form method="get" action="https://echo.htmlacademy.ru" class="filter-form">
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <div class="range">
+                        <div class="range-line">
+                            <div class="range-value"></div>
+                            <button type="button" class="range-button range-button-left"></button>
+                            <button type="button" class="range-button range-button-right"></button>
+                        </div>
+                    </div>
+                    <p class="range-price">
+                        <span class="range-price-min">0</span> ‒
+                        <span class="price-max">30000</span>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="filter-checkbox" id="filter-bosch" name="bosch" checked>
+                            <label for="filter-bosch" class="filter-label">Bosch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="filter-checkbox" id="filter-interskol" name="interskol">
+                            <label for="filter-interskol" class="filter-label">Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="filter-checkbox" id="filter-makita" name="makita" checked>
+                            <label for="filter-makita" class="filter-label">Makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="filter-checkbox" id="filter-dewalt" name="dewalt">
+                            <label for="filter-dewalt" class="filter-label">Dewalt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="filter-checkbox" id="filter-hitachi" name="hitachi">
+                            <label for="filter-hitachi" class="filter-label">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" class="filter-radio" id="battery" name="power-supply"  value="Аккумуляторные" checked>
+                            <label for="battery" class="filter-label">Аккумуляторные</label>
+                        </li>
+                        <li>
+                            <input type="radio" class="filter-radio" id="electricity" name="power-supply" value="Сетевые">
+                            <label for="electricity" class="filter-label">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="btn btn-white">Показать</button>
+            </form>
+        </section>
+        <section class="filter-sort">
+            <h2 class="filter-sort-title">Cортировка:</h2>
+            <form method="get" action="https://echo.htmlacademy.ru" class="sort-form">
+                <ul>
+                    <li>
+                        <input type="radio" class="visually-hidden" name="sort" id="by-price" value="По цене" checked>
+                        <label for="by-price" class="sort-label">По цене</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="visually-hidden" name="sort" id="by-type" value="По типу">
+                        <label for="by-type" class="sort-label sort-label-activate">По типу</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="visually-hidden" name="sort" id="by-functional" value="По функционалу">
+                        <label for="by-functional" class="sort-label">По функционалу</label>
+                    </li>
+                </ul>
+                <button type="submit" class="sort-button sort-button-up"><span class="visually-hidden">По возрастанию</span></button>
+                <button type="submit" class="sort-button sort-button-down"><span class="visually-hidden">По убыванию</span></button>
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Перфораторы на ваш выбор:</h2>
