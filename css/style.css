@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprum/cuprum.woff"), url("../fonts/cuprum/cuprum.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CuprumBold";
+    src: url("../fonts/cuprum/cuprumitalic.woff"), url("../fonts/cuprum/cuprumitalic.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CuprumItalic";
+    src: url("../fonts/cuprum/cuprumbold.woff"), url("../fonts/cuprum/cuprumbold.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/ptsans/ptsans.woff"), url("../fonts/ptsans/ptsans.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSansBold";
+    src: url("../fonts/ptsans/ptsansbold.woff"), url("../fonts/ptsans/ptsansbold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    background-color: #f4f7f9;
+}
+
+.top-header {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.top-header a {
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.top-header a:hover,
+.top-header a:focus,
+.top-header .search:hover {
+    background-color: #212a3a;
+}
+
+.top-header .search {
+    color: #ffffff;
+    background-color: #293449;
+}
+
+.top-header .search:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.top-header a:active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #161d29;
+}
+
+.top-header .checkout {
+    color: #ffffff;
+    background-color: #63a63e;
+}
+
+.top-header .checkout:hover,
+.top-header .checkout:focus {
+    color: #ffffff;
+    background-color: #5fbb2d;
+}
+
+.top-header .checkout:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
+}
