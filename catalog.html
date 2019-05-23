@@ -10,10 +10,9 @@
     <header class="header">
         <div class="top-header">
             <a href="index.html" class="logo header-logo"><img src="img/logo-text.svg" alt="Техномарт" class="logo-img" width="137" height="22"></a>
-            <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
-                <label class="search-label">Поиск:
-                    <input type="search" name="search" class="search" id="search">
-                </label>
+            <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+                <label  for="search" class="visually-hidden">Поиск:</label>
+                <input type="search" name="search" class="search" id="search" placeholder="Поиск:">
             </form>
             <a href="#" class="markers markers-null">Закладки: <span class="marker-count">0</span></a>
             <a href="#" class="basket basket-full">Корзина: <span class="basket-count">10</span></a>
@@ -148,20 +147,17 @@
             <form method="get" action="https://echo.htmlacademy.ru" class="sort-form">
                 <ul>
                     <li>
-                        <input type="radio" class="visually-hidden" name="sort" id="by-price" value="По цене" checked>
-                        <label for="by-price" class="sort-label">По цене</label>
+                        <a href="#" class="sort-link sort-link-activate">По цене</a>
                     </li>
                     <li>
-                        <input type="radio" class="visually-hidden" name="sort" id="by-type" value="По типу">
-                        <label for="by-type" class="sort-label sort-label-activate">По типу</label>
+                        <a href="#" class="sort-link">По типу</a>
                     </li>
                     <li>
-                        <input type="radio" class="visually-hidden" name="sort" id="by-functional" value="По функционалу">
-                        <label for="by-functional" class="sort-label">По функционалу</label>
+                        <a href="#" class="sort-link">По функционалу</a>
                     </li>
                 </ul>
-                <button type="submit" class="sort-button sort-button-up"><span class="visually-hidden">По возрастанию</span></button>
-                <button type="submit" class="sort-button sort-button-down"><span class="visually-hidden">По убыванию</span></button>
+                <a href="#" class="sort-button sort-button-up"><span class="visually-hidden">По возрастанию</span></a>
+                <a href="#" class="sort-button sort-button-down"><span class="visually-hidden">По убыванию</span></a>
             </form>
         </section>
         <section class="catalog">
@@ -299,7 +295,7 @@
 
         <ul class="pagination">
             <li class="pagination-item">
-                <a href="#" class="pagination-link">1</a>
+                <a href="#" class="pagination-link current">1</a>
             </li>
             <li class="pagination-item">
                 <a href="#" class="pagination-link">2</a>
@@ -317,7 +313,7 @@
 
         <section class="seo-block">
             <h2 class="title">Пара слов о перфораторах</h2>
-            <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            <p class="description">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
     </main>
@@ -325,42 +321,42 @@
     <footer class="footer">
         <div class="top-footer">
             <div class="footer-stroke">
-                <a href="index.html" class="logo footer-logo"><img src="img/logo-text.svg" alt="Техномарт" class="logo-img" width="137" height="22"></a>
+                <a class="logo footer-logo" href="#"><img alt="Техномарт" class="logo-img" height="22" src="img/logo-footer.png" width="137"></a>
                 <ul class="footer-navigation">
                     <li>
-                        <a href="#" class="footer-navigation-link">Компания</a>
+                        <a class="footer-navigation-link" href="#">Компания</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-navigation-link">Новости</a>
+                        <a class="footer-navigation-link" href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-navigation-link">Каталог</a>
+                        <a class="footer-navigation-link" href="#">Каталог</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-navigation-link">Доставка</a>
+                        <a class="footer-navigation-link" href="#">Доставка</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-navigation-link">Контакты</a>
+                        <a class="footer-navigation-link" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-stroke">
                 <p class="footer-address">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                    <a href="tel:+78125550555" class="footer-phone">+7 (812) 555-05-55</a>
+                    <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </p>
                 <ul class="footer-catalog">
                     <li>
-                        <a href="#" class="footer-catalog-link">Материалы</a>
+                        <a class="footer-catalog-link" href="#">Материалы</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-catalog-link">Техника</a>
+                        <a class="footer-catalog-link" href="#">Техника</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-catalog-link">Инструмент</a>
+                        <a class="footer-catalog-link" href="#">Инструмент</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-catalog-link">Спецпредложения</a>
+                        <a class="footer-catalog-link" href="#">Спецпредложения</a>
                     </li>
                 </ul>
             </div>
@@ -370,20 +366,20 @@
                 Все права защищены</p>
             <ul class="social-list">
                 <li class="social-item">
-                    <a href="#" class="social-btn vk"><span class="visually-hidden">Мы в Вконтакте</span></a>
+                    <a class="social-btn vk" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
                 </li>
                 <li class="social-item">
-                    <a href="#" class="social-btn facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                    <a class="social-btn facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
                 </li>
                 <li class="social-item">
-                    <a href="#" class="social-btn inst"><span class="visually-hidden">Мы в Инстаграме</span></a>
+                    <a class="social-btn inst" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
                 </li>
             </ul>
             <p class="feedback-text">Обратная связь:
-                <a href="mailto:mail@htmlacademy.ru" class="feedback-link">mail@htmlacademy.ru</a>
+                <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
             <p class="feedback-text">Разработанно -
-                <a href="https://htmlacademy.ru/intensive/htmlcss" class="feedback-link">htmlacademy.ru</a>
+                <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </div>
     </footer>
@@ -392,8 +388,10 @@
         <button class="btn-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
         <div class="popup-content">
             <h2 class="title popup-title">Товар добавлен в корзину!</h2>
-            <a href="#" class="btn">Оформить заказ</a>
-            <a href="#" class="btn btn-white">Продолжить покупки</a>
+            <div class="popup-footer">
+                <a href="#" class="btn">Оформить заказ</a>
+                <a href="#" class="btn btn-white">Продолжить покупки</a>
+            </div>
         </div>
     </section>
 </body>
