@@ -10,7 +10,7 @@
 
 <header class="header">
     <div class="top-header">
-        <div class="container">
+        <div class="container top-header-wrapper">
             <a class="logo header-logo" href="#"><img alt="Техномарт" class="logo-img" height="22" src="img/logo-text.svg" width="137"></a>
             <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
                 <label  for="search" class="visually-hidden">Поиск:</label>
@@ -23,19 +23,21 @@
     </div>
     <div class="bottom-header">
         <div class="container">
-            <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            <div class="header-contacts">
-                <a class="phone header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p class="address header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <div class="bottom-header-wrapper">
+                <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+                <div class="header-contacts">
+                    <a class="phone header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                    <p class="address header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
+                <ul class="user-menu">
+                    <li class="user-menu-item">
+                        <a class="user-menu-link" href="#">Войти</a>
+                    </li>
+                    <li class="user-menu-item">
+                        <a class="user-menu-link" href="#">Регистрация</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="user-menu">
-                <li class="user-menu-item">
-                    <a class="user-menu-link" href="#">Войти</a>
-                </li>
-                <li class="user-menu-item">
-                    <a class="user-menu-link" href="#">Регистрация</a>
-                </li>
-            </ul>
             <nav class="main-navigation">
                 <ul class="navigation-list">
                     <li class="navigation item">
@@ -255,9 +257,11 @@
     </div>
     <section class="services">
         <div class="container">
-            <h2 class="title">Сервисы</h2>
-            <p class="description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
-                сил, чтобы сделать ваши покупки приятными.</p>
+            <div class="services-text-block">
+                <h2 class="title">Сервисы</h2>
+                <p class="description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
+                    сил, чтобы сделать ваши покупки приятными.</p>
+            </div>
 
             <div class="services-wrapper">
                 <ul class="services-controls-list">
@@ -296,7 +300,7 @@
     </section>
 
     <section class="about-company">
-        <div class="container">
+        <div class="container about-company-wrapper">
             <div class="about-company-item">
                 <h2 class="title">Компания "Техномарт"</h2>
                 <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -327,7 +331,7 @@
     <div class="top-footer">
         <div class="container">
             <div class="footer-stroke">
-                <a class="logo footer-logo" href="#"><img alt="Техномарт" class="logo-img" height="22" src="img/logo-footer.png" width="137"></a>
+                <a class="logo footer-logo" href="#"><img alt="Техномарт" class="logo-img" height="68" src="img/logo-footer.png" width="220"></a>
                 <ul class="footer-navigation">
                     <li>
                         <a class="footer-navigation-link" href="#">Компания</a>
@@ -369,7 +373,7 @@
         </div>
     </div>
     <div class="bottom-footer">
-        <div class="container">
+        <div class="container bottom-footer-wrapper">
             <p class="copyright">© 2010–2019 Компания «Техномарт»<br>
                 Все права защищены</p>
             <ul class="social-list">
