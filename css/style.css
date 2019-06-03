@@ -93,12 +93,12 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover:not(.btn-price),
+.btn:focus:not(.btn-price) {
     background-color: #ca2c37;
 }
 
-.btn:active {
+.btn:active:not(.btn-price) {
     background-color: #ba2732;
 }
 
@@ -888,14 +888,18 @@ input[type="radio"].visually-hidden {
 .catalog-list {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.catalog-list li {
+    display: flex;
+}
+
 .catalog-item {
+    position: relative;
     width: 218px;
     margin-bottom: 20px;
     font-family: "PTSansBold", Arial, sans-serif;
@@ -904,22 +908,63 @@ input[type="radio"].visually-hidden {
     border: 2px solid #eaeaea;
 }
 
+
+.catalog-item.new::before {
+    content: url("../img/new-flag.png");
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
 .catalog-item:hover {
     border-color: transparent;
     box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.catalog-img-wrapper {
+    margin-bottom: 30px;
+}
+
+.catalog-link-buttons {
+    display: none;
+}
+
 .catalog-item-name {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0 25px;
     font-size: 18px;
     line-height: 20px;
     color: #000000;
 }
 
 .old-price {
+    display: inline-block;
+    margin-bottom: 10px;
     font-size: 17px;
     line-height: 18px;
     color: #a9a9a9;
     text-decoration: line-through;
+}
+
+.btn-price {
+    display: block;
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+}
+
+.btn-price::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border: 19px solid #ffffff;
+    border-left-color: #ee3643;
 }
 
 .catalog-link-btn {
