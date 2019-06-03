@@ -667,7 +667,15 @@ input[type="radio"].visually-hidden {
 }
 
 .banner {
+    position: relative;
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 22px;
     width: 300px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: top 50% right 30px;
 }
 
 .banners-list .banner.yellow {
@@ -686,7 +694,29 @@ input[type="radio"].visually-hidden {
     background-color: #8ed78f;
 }
 
+.banner.materials {
+    background-image: url("../img/icon-1.svg");
+}
+
+.banner.tools {
+    background-image: url("../img/icon-2.svg");
+}
+
+.banner.technic {
+    background-image: url("../img/icon-3.svg");
+}
+
+.banner.sale {
+    background-image: url("../img/icon-4.svg");
+}
+
+.banner.delivery {
+    background-image: url("../img/icon-5.svg");
+}
+
 .banners-list .banner-title {
+    margin: 0;
+    margin-bottom: 15px;
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
@@ -695,6 +725,7 @@ input[type="radio"].visually-hidden {
 }
 
 .banner-btn {
+    padding: 10px 25px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -714,12 +745,17 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-title {
+    margin: 0;
     font-family: "CuprumBold", Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.slide-wrapper {
+    position: relative;
 }
 
 .slide-subtitle {
