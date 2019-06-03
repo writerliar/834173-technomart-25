@@ -35,6 +35,10 @@
     </symbol>
     <symbol id="instagram" viewBox="0 0 21 21">
         <path d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+    </symbol>H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+    </symbol>
+    <symbol id="toggle" viewBox="0 0 22 40">
+        <path d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
     </symbol>
 </svg>
 
@@ -147,10 +151,21 @@
                         <p class="slide-subtitle">Соседям в радость!</p>
                     </div>
                     <a class="btn slide-btn" href="catalog.html">Открыть каталог</a>
-                    <button class="slide-toggle back"><span class="visually-hidden">назад</span></button>
-                    <button class="slide-toggle next"><span class="visually-hidden">вперед</span></button>
-                    <label class="slide-controls" for="slide-control-1"></label>
-                    <label class="slide-controls" for="slide-control-2"></label>
+                    <button class="slide-toggle back">
+                        <svg class="toggle" width="22" height="40">
+                            <use xlink:href="#toggle"></use>
+                        </svg>
+                        <span class="visually-hidden">назад</span>
+                    </button>
+                    <button class="slide-toggle next">
+                        <svg class="toggle" width="22" height="40">
+                            <use xlink:href="#toggle"></use>
+                        </svg><span class="visually-hidden">вперед</span>
+                    </button>
+                    <div class="slide-controls-wrapper">
+                        <label class="slide-controls" for="slide-control-1"></label>
+                        <label class="slide-controls active" for="slide-control-2"></label>
+                    </div>
                     <input checked class="visually-hidden" id="slide-control-1" name="services-slide" type="radio">
                     <input class="visually-hidden" id="slide-control-2" name="services-slide" type="radio">
                 </div>

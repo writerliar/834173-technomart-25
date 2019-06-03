@@ -678,6 +678,13 @@ input[type="radio"].visually-hidden {
     background-position: top 50% right 30px;
 }
 
+.banner.new::before {
+    content: url("../img/new-flag.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .banners-list .banner.yellow {
     background-color: #ffbf47;
 }
@@ -738,14 +745,30 @@ input[type="radio"].visually-hidden {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.banners-slider {
+    position: relative;
+}
+
 .banners-slider .slide {
-    width: 620px;
+    display: none;
+    width: 630px;
     min-height: 266px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 22px;
+    padding-right: 20px;
+    box-sizing: border-box;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banners-slider .slide.active {
+    display: block;
 }
 
 .slide-title {
     margin: 0;
+    margin-bottom: 5px;
     font-family: "CuprumBold", Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -754,11 +777,8 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.slide-wrapper {
-    position: relative;
-}
-
 .slide-subtitle {
+    margin: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -774,6 +794,70 @@ input[type="radio"].visually-hidden {
 .slide-2 {
     background-color: #563d36;
     background-image: url("../img/slide-2.jpg");
+}
+
+.slide-btn {
+    position: absolute;
+    left: 25px;
+    bottom: 22px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.slide-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+}
+
+.slide-toggle.back {
+    left: 25px;
+}
+
+.slide-toggle.next {
+    right: 20px;
+    transform: translateY(-50%) scale(-1, 1);
+}
+
+.slide-toggle .toggle {
+    fill: #ffffff;
+}
+
+.slide-controls-wrapper {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    transform: translateX(-50%);
+}
+
+.slide-controls {
+    position: absolute;
+    bottom: 35px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.slide-controls:first-child {
+    left: 0;
+}
+
+.slide-controls:last-child {
+    right: 0;
+}
+
+.slide-controls.active::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #ee3643;
+    border-radius: 50%;
 }
 
 .popular-product {
