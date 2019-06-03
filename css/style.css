@@ -79,6 +79,11 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
+    display: inline-block;
+    padding-top: 14px;
+    padding-right: 55px;
+    padding-bottom: 12px;
+    padding-left: 55px;
     color: #ffffff;
     font-size: 14px;
     line-height: 18px;
@@ -95,11 +100,6 @@ input[type="radio"].visually-hidden {
 
 .btn:active {
     background-color: #ba2732;
-}
-
-.btn {
-    border-radius: 3px;
-    background-color: #ee3643;
 }
 
 .header {
@@ -749,10 +749,15 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    padding-top: 25px;
+    padding-right: 24px;
+    padding-bottom: 25px;
+    padding-left: 30px;
     background-color: #f9f5f0;
 }
 
 .bg-title {
+    margin: 0;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
