@@ -1069,6 +1069,7 @@ input[type="radio"].visually-hidden {
 
 .services {
     margin-bottom: 82px;
+    padding-top: 60px;
     background-color: #f4f8f9;
 }
 
@@ -1078,6 +1079,8 @@ input[type="radio"].visually-hidden {
 }
 
 .title {
+    margin: 0;
+    margin-bottom: 30px;
     color: #000000;
     font-size: 30px;
     line-height: 30px;
@@ -1086,6 +1089,8 @@ input[type="radio"].visually-hidden {
 }
 
 .description {
+    margin: 0;
+    margin-bottom: 30px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -1098,6 +1103,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-controls-list {
+    position: relative;
     width: 240px;
     margin: 0;
     margin-right: 70px;
@@ -1107,8 +1113,17 @@ input[type="radio"].visually-hidden {
     background-color: #32425c;
 }
 
+.services-controls-list::after {
+    content: url("../img/shadow.png");
+    position: absolute;
+    top: -35px;
+    right: 0;
+}
+
 .services-controls-list .services-controls-link {
     display: block;
+    width: 240px;
+    padding: 15px 20px;
     font-family: "CuprumBold", Arial, sans-serif;
     font-size: 21px;
     line-height: 30px;
@@ -1117,6 +1132,7 @@ input[type="radio"].visually-hidden {
     background-color: #32425c;
     border-top: 1px solid #405069;
     border-bottom: 1px solid #293449;
+    box-sizing: border-box;
 }
 
 .services-controls-list .services-controls-link.current {
@@ -1131,9 +1147,19 @@ input[type="radio"].visually-hidden {
     background-color: #293449;
 }
 
+.services-slider {
+    width: 100%;
+}
+
 .service-slide {
+    display: none;
+    min-height: 290px;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.service-slide.current {
+    display: block;
 }
 
 .service-slide-1 {
@@ -1149,6 +1175,8 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slide-title {
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -1164,6 +1192,14 @@ input[type="radio"].visually-hidden {
     margin-bottom: 86px;
 }
 
+.about-company-item:not(:last-child) {
+    margin-right: 118px;
+}
+
+.about-company .description {
+    margin-bottom: 20px;
+}
+
 .about-company-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1172,15 +1208,43 @@ input[type="radio"].visually-hidden {
 
 .transport-company-list {
     margin: 0;
+    margin-bottom: 25px;
     padding: 0;
     list-style: none;
 }
 
 .transport-company-item {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 25px;
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
     color: #000000;
+}
+
+.transport-company-item::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+}
+
+.transport-company-item:last-child {
+    margin-bottom: 0;
+}
+
+.mini-map {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.map-btn {
+    width: 300px;
+    box-sizing: border-box;
 }
 
 .pagination {
