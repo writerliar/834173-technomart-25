@@ -1043,11 +1043,15 @@ input[type="radio"].visually-hidden {
 }
 
 .manufacturers-item {
-    width: 220px;
+    margin-bottom: 20px;
 }
 
 .manufacturers-item a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 145px;
     border: 2px solid #eaeaea;
 }
 
