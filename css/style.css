@@ -93,12 +93,12 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
 }
 
-.btn:hover:not(.btn-price),
-.btn:focus:not(.btn-price) {
+.btn:hover:not(.btn-price):not(.banner-btn),
+.btn:focus:not(.btn-price):not(.banner-btn) {
     background-color: #ca2c37;
 }
 
-.btn:active:not(.btn-price) {
+.btn:active:not(.btn-price):not(.banner-btn) {
     background-color: #ba2732;
 }
 
@@ -914,6 +914,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -2px;
     right: -2px;
+    z-index: 10;
 }
 
 .catalog-item:hover {
@@ -927,6 +928,18 @@ input[type="radio"].visually-hidden {
 
 .catalog-link-buttons {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+.catalog-item:hover .catalog-link-buttons {
+    display: block;
 }
 
 .catalog-item-name {
@@ -968,6 +981,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-link-btn {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
