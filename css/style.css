@@ -661,6 +661,31 @@ input[type="radio"].visually-hidden {
     right: 25px;
 }
 
+.filter .filter-choice {
+    border: none;
+    margin: 0;
+    margin-bottom: 23px;
+    padding: 0;
+}
+
+.filter-choice ul {
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0;
+    list-style: none;
+}
+
+.filter-choice ul {
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0;
+    list-style: none;
+}
+
+.filter-choice li {
+    margin-bottom: 25px;
+}
+
 .filter fieldset:not(:last-child) {
     border-bottom: 1px solid #e5e5e5;
 }
@@ -692,8 +717,89 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-label {
+    position: relative;
+    display: block;
+    padding-left: 36px;
     font-size: 15px;
     line-height: 20px;
+    cursor: pointer;
+}
+
+.filter-choice .filter-checkbox+.filter-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.8;
+}
+
+.filter-choice .filter-checkbox:checked+.filter-label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.8;
+}
+
+.filter-choice .filter-checkbox:not(:disabled)+.filter-label:hover::before {
+    opacity: 1;
+}
+
+.filter-choice .filter-checkbox:disabled+.filter-label {
+    opacity: 0.3;
+}
+
+.filter-choice .filter-checkbox:disabled+.filter-label::before {
+    opacity: 0.3;
+}
+
+
+.filter-choice .filter-radio+.filter-label::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #b5b5b5;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.filter-choice .filter-radio:checked+.filter-label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+
+.filter-choice .filter-radio:not(:disabled)+.filter-label:hover::after,
+.filter-choice .filter-radio:not(:disabled)+.filter-label:hover::before {
+    opacity: 1;
+}
+
+.filter-choice .filter-radio:disabled+.filter-label::before,
+.filter-choice .filter-radio:disabled+.filter-label::after {
+    opacity: 0.3;
+}
+
+.filter-choice .filter-radio:disabled+.filter-label {
+    opacity: 0.3;
 }
 
 .filter .btn-white {
@@ -1438,8 +1544,8 @@ input[type="radio"].visually-hidden {
 
 .pagination-link:not(.current):hover,
 .pagination-link:not(.current):focus,
-.pagination-button:not(.current):hover,
-.pagination-button:not(.current):focus {
+.pagination-button:hover,
+.pagination-button:focus {
     border-color: #bdc6ca;
 }
 
