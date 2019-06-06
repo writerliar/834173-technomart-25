@@ -593,14 +593,80 @@ input[type="radio"].visually-hidden {
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
+    width: 220px;
     font-size: 13px;
     line-height: 18px;
     background-color: #f7f3ec;
     font-weight: 400;
     border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.filter-form {
+    width: 220px;
+}
+
+.filter .filter-range {
+    border: none;
+    margin: 0;
+    margin-bottom: 23px;
+    padding: 0;
+}
+
+.filter .range {
+    padding: 39px 20px;
+    margin-bottom: 9px;
+}
+
+.filter .range,
+.filter .price {
+    background-color: #f7f3ec;
+    border-radius: 3px;
+}
+
+.filter .range-line {
+    position: relative;
+    height: 2px;
+    width: 180px;
+    background-color: #d7dcde;
+}
+
+.filter .range-value {
+    position: absolute;
+    top: 0;
+    left: 17px;
+    height: 2px;
+    width: 75%;
+    background-color: #00ca74;
+}
+
+.filter .range-button {
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    height: 22px;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../img/filter-button.svg");
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+}
+
+.filter .range-button-left {
+    left: 12px;
+}
+
+.filter .range-button-right {
+    right: 25px;
+}
+
+.filter fieldset:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .filter legend {
+    margin-bottom: 20px;
     font-family: "PTSansBold", Arial, sans-serif;
     font-size: 17px;
     line-height: 30px;
@@ -608,8 +674,21 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .range-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 25px;
     font-size: 17px;
     line-height: 18px;
+}
+
+.filter .price {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 95px;
+    box-sizing: border-box;
 }
 
 .filter-label {
