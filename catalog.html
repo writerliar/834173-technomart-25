@@ -38,6 +38,9 @@
     <symbol id="instagram" viewBox="0 0 21 21">
         <path d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
     </symbol>
+    <symbol id="home" viewBox="0 0 15 12">
+        <g><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g>
+    </symbol>
 </svg>
     <header class="header inner">
         <div class="top-header">
@@ -136,16 +139,20 @@
         <div class="container">
             <h1 class="visually-hidden">Каталог товаров магазина Техномарт</h1>
             <ul class="breadcrumbs">
-                <li>
-                    <a href="index.html" class="breadcrumbs-link main"><span class="visually-hidden">На главную</span></a>
+                <li class="bredcrumbs-item">
+                    <a href="index.html" class="breadcrumbs-link main">
+                        <svg class="breadcrumb-home" width="15" height="12">
+                            <use xlink:href="#home"></use>
+                        </svg>
+                        <span class="visually-hidden">На главную</span></a>
                 </li>
-                <li>
+                <li class="bredcrumbs-item">
                     <a href="#" class="breadcrumbs-link">Каталог</a>
                 </li>
-                <li>
+                <li class="bredcrumbs-item">
                     <a href="#" class="breadcrumbs-link">Инструмент</a>
                 </li>
-                <li>
+                <li class="bredcrumbs-item">
                     <a class="breadcrumbs-link">Перфораторы</a>
                 </li>
             </ul>
