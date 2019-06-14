@@ -1308,8 +1308,11 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 700px;
     list-style: none;
+}
+
+.right-column-wrapper .catalog-list {
+    width: 700px;
 }
 
 .catalog-list li {
