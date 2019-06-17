@@ -84,6 +84,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
     display: inline-block;
+    vertical-align: top;
     padding-top: 11px;
     padding-right: 45px;
     padding-bottom: 9px;
@@ -166,6 +167,7 @@ input[type="radio"].visually-hidden {
 
 .top-header .logo {
     display: inline-block;
+    vertical-align: top;
     width: 223px;
     padding-top: 13px;
     padding-right: 55px;
@@ -800,6 +802,7 @@ input[type="radio"].visually-hidden {
     padding: 10px;
     text-align: center;
     width: 95px;
+    border: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -948,6 +951,10 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
+.filter-sort .sort-control.toggle {
+    width: 50px;
+}
+
 .filter-sort .sort-link {
     font-size: 13px;
     line-height: 18px;
@@ -968,17 +975,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-button {
-    position: absolute;
-    top: 50%;
-    right: 0;
     display: block;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.sort-button-up {
-    right: 32px;
 }
 
 .sort-button .sort-arrow {
@@ -1377,6 +1374,7 @@ input[type="radio"].visually-hidden {
 
 .old-price {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 0;
     font-size: 17px;
     line-height: 18px;
@@ -1644,7 +1642,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slide .description {
-    width: 273px;
+    width: 375px;
 }
 
 .about-company {
@@ -1721,6 +1719,7 @@ input[type="radio"].visually-hidden {
 
 .mini-map {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 36px;
 }
 

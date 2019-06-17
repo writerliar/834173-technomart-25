@@ -147,7 +147,7 @@
         <h2 class="inner-title">Перфораторы</h2>
         <div class="content-wrapper">
             <section class="filter">
-                <h2 class="filter-title">Фильтр:</h2>
+                <h3 class="filter-title">Фильтр:</h3>
                 <form method="get" action="https://echo.htmlacademy.ru" class="filter-form">
                     <fieldset class="filter-range">
                         <legend>Цена:</legend>
@@ -159,8 +159,8 @@
                             </div>
                         </div>
                         <p class="range-price">
-                            <span class="price price-min">0</span> ‒
-                            <span class="price price-max">30000</span>
+                            <input type="text" name="min-price" class="price price-min" value="0"> ‒
+                            <input type="text" name="max-price" class="price price-max" value="30000">
                         </p>
                     </fieldset>
                     <fieldset class="filter-choice checkbox-wrapper">
@@ -201,12 +201,12 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <button class="btn btn-white">Показать</button>
+                    <button type="submit" class="btn btn-white">Показать</button>
                 </form>
             </section>
             <div class="right-column-wrapper">
                 <section class="filter-sort">
-                    <h2 class="filter-sort-title">Cортировка:</h2>
+                    <h3 class="filter-sort-title">Сортировка:</h3>
                     <ul class="sort-control">
                         <li>
                             <a href="#" class="sort-link sort-link-activate">По цене</a>
@@ -217,6 +217,8 @@
                         <li>
                             <a href="#" class="sort-link">По функционалу</a>
                         </li>
+                    </ul>
+                    <ul class="sort-control toggle">
                         <li>
                             <a href="#" class="sort-button sort-button-up active">
                                 <svg class="sort-arrow sort-arrow-up" width="11" height="10">
@@ -249,7 +251,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 3000</h3>
                                 <span class="old-price">22500 Р.</span>
-                                <a href="#" class="btn btn-price">15500 Р.</a>
+                                <div class="btn btn-price">15500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -263,7 +265,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 6000</h3>
                                 <span class="old-price">30500 Р.</span>
-                                <a href="#" class="btn btn-price">25500 Р.</a>
+                                <div class="btn btn-price">25500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -277,7 +279,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 2000</h3>
                                 <span class="old-price"></span>
-                                <a href="#" class="btn btn-price">12500 Р.</a>
+                                <div class="btn btn-price">12500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -291,7 +293,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 3000</h3>
                                 <span class="old-price">22500 Р.</span>
-                                <a href="#" class="btn btn-price">15500 Р.</a>
+                                <div class="btn btn-price">15500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -305,7 +307,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 6000</h3>
                                 <span class="old-price">30500 Р.</span>
-                                <a href="#" class="btn btn-price">25500 Р.</a>
+                                <div class="btn btn-price">25500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -319,7 +321,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 2000</h3>
                                 <span class="old-price"></span>
-                                <a href="#" class="btn btn-price">12500 Р.</a>
+                                <div class="btn btn-price">12500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -333,7 +335,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 3000</h3>
                                 <span class="old-price">22500 Р.</span>
-                                <a href="#" class="btn btn-price">15500 Р.</a>
+                                <div class="btn btn-price">15500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -347,7 +349,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 6000</h3>
                                 <span class="old-price">30500 Р.</span>
-                                <a href="#" class="btn btn-price">25500 Р.</a>
+                                <div class="btn btn-price">25500 Р.</div>
                             </article>
                         </li>
                         <li>
@@ -361,7 +363,7 @@
                                 </div>
                                 <h3 class="catalog-item-name">Перфоратор BOSCH BFG 2000</h3>
                                 <span class="old-price"></span>
-                                <a href="#" class="btn btn-price">12500 Р.</a>
+                                <div class="btn btn-price">12500 Р.</div>
                             </article>
                         </li>
                     </ul>
@@ -386,7 +388,7 @@
     <section class="seo-block">
         <div class="container">
             <h2 class="title">Пара слов о перфораторах</h2>
-            <p class="description">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            <p class="description">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>
         </div>
@@ -439,8 +441,8 @@
     </div>
     <div class="bottom-footer">
         <div class="container bottom-footer-wrapper">
-            <p class="copyright">© 2010–2019 Компания «Техномарт»<br>
-                Все права защищены
+            <p class="copyright">© 2010–2019 Компания «Техномарт»
+                <span>Все права защищены</span>
             </p>
             <ul class="social-list">
                 <li class="social-item">
