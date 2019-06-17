@@ -906,6 +906,15 @@ input[type="radio"].visually-hidden {
     border: 1px solid #e5e5e5;
 }
 
+.filter .btn-white:hover,
+.filter .btn-white:focus {
+    border-color: #ee3643;
+}
+
+.filter .btn-white:active {
+    border-color: #000000;
+}
+
 .filter-sort {
     display: -webkit-box;
     display: -ms-flexbox;
