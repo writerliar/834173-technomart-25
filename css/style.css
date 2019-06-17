@@ -820,7 +820,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.filter-choice .filter-checkbox+.filter-label::before {
+.filter-checkbox+.filter-label::before {
     content: "";
     position: absolute;
     top: 0;
@@ -833,7 +833,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.8;
 }
 
-.filter-choice .filter-checkbox:checked+.filter-label::before {
+.filter-checkbox:checked+.filter-label::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -845,20 +845,20 @@ input[type="radio"].visually-hidden {
     opacity: 0.8;
 }
 
-.filter-choice .filter-checkbox:not(:disabled)+.filter-label:hover::before {
+.filter-checkbox:not(:disabled)+.filter-label:hover::before {
     opacity: 1;
 }
 
-.filter-choice .filter-checkbox:disabled+.filter-label {
+.filter-checkbox:disabled+.filter-label {
     opacity: 0.3;
 }
 
-.filter-choice .filter-checkbox:disabled+.filter-label::before {
+.filter-checkbox:disabled+.filter-label::before {
     opacity: 0.3;
 }
 
 
-.filter-choice .filter-radio+.filter-label::before {
+.filter-radio+.filter-label::before {
     content: "";
     position: absolute;
     top: -3px;
@@ -870,7 +870,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.8;
 }
 
-.filter-choice .filter-radio:checked+.filter-label::after {
+.filter-radio:checked+.filter-label::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -883,17 +883,17 @@ input[type="radio"].visually-hidden {
 }
 
 
-.filter-choice .filter-radio:not(:disabled)+.filter-label:hover::after,
-.filter-choice .filter-radio:not(:disabled)+.filter-label:hover::before {
+.filter-radio:not(:disabled)+.filter-label:hover::after,
+.filter-radio:not(:disabled)+.filter-label:hover::before {
     opacity: 1;
 }
 
-.filter-choice .filter-radio:disabled+.filter-label::before,
-.filter-choice .filter-radio:disabled+.filter-label::after {
+.filter-radio:disabled+.filter-label::before,
+.filter-radio:disabled+.filter-label::after {
     opacity: 0.3;
 }
 
-.filter-choice .filter-radio:disabled+.filter-label {
+.filter-radio:disabled+.filter-label {
     opacity: 0.3;
 }
 
