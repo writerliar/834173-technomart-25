@@ -324,6 +324,10 @@ input[type="radio"].visually-hidden {
     color: #ee3643;
 }
 
+.header.inner .main-title {
+    margin-right: 25px;
+}
+
 .header-contacts {
     width: 270px;
 }
@@ -564,9 +568,9 @@ input[type="radio"].visually-hidden {
 .navigation-link {
     display: block;
     padding-top: 20px;
-    padding-right: 30px;
+    padding-right: 33px;
     padding-bottom: 18px;
-    padding-left: 29px;
+    padding-left: 28px;
     color: #ffffff;
     background-color: #32425c;
 }
@@ -929,6 +933,7 @@ input[type="radio"].visually-hidden {
 
 .filter-sort-title {
     margin: 0;
+    margin-right: 141px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -946,13 +951,15 @@ input[type="radio"].visually-hidden {
     -ms-flex-align: center;
     align-items: center;
     margin: 0;
+    margin-right: 45px;
     padding: 0;
-    width: 443px;
+    width: 355px;
     list-style: none;
 }
 
 .filter-sort .sort-control.toggle {
-    width: 50px;
+    width: 43px;
+    margin-right: 0;
 }
 
 .filter-sort .sort-link {
@@ -1515,6 +1522,35 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
+.manufacturers-item img {
+    position: relative;
+}
+
+.manufacturers-item.makita img {
+    top: -4px;
+}
+
+.manufacturers-item.dewalt img {
+    top: -3px;
+}
+
+.manufacturers-item.interskol img {
+    top: -8px;
+}
+
+.manufacturers-item.hitachi img {
+    top: 2px;
+}
+
+.manufacturers-item.aeg img {
+    top: -2px;
+}
+
+.manufacturers-item.metabo img {
+    top: -4px;
+    left: 2px;
+}
+
 .services {
     margin-bottom: 79px;
     padding-top: 65px;
@@ -1642,7 +1678,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slide .description {
-    width: 375px;
+    width: 275px;
 }
 
 .about-company {
@@ -1665,8 +1701,13 @@ input[type="radio"].visually-hidden {
     margin-bottom: 23px;
 }
 
+.about-description.special-width {
+    width: 400px;
+}
+
 .contacts .description {
     margin-bottom: 31px;
+    width: 200px;
 }
 
 .about-company-wrapper {
