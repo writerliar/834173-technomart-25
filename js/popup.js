@@ -1,6 +1,6 @@
 var link = document.querySelector(".call-feedback-popup");
 var popupFeedback = document.querySelector(".feedback-popup");
-var close = document.querySelector(".btn-close");
+var closeFeedback = document.querySelector(".feedback-close");
 var form = document.querySelector(".feedback-form");
 var userName = document.querySelector("[name=name]");
 var email = document.querySelector("[name=email]");
@@ -28,14 +28,13 @@ link.addEventListener("click", function (evt) {
    }
 });
 
-close.addEventListener("click", function (evt) {
+closeFeedback.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupFeedback.remove("popup-show");
-    popupFeedback.remove("popup-error");
+    popupFeedback.classList.remove("popup-show");
+    popupFeedback.classList.remove("popup-error");
 });
 
 form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
     if (!email.value || !userName.value || !message.value){
         evt.preventDefault();
         popupFeedback.classList.remove("popup-error");
