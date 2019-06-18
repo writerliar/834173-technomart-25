@@ -592,6 +592,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -624,13 +626,11 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    width: 357px;
     list-style: none;
     font-family: "PTSans", Arial, sans-serif;
     color: #000000;
@@ -865,6 +865,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.8;
 }
 
+/*.filter-checkbox:focus+.filter-label {*/
+    /*outline: 1px solid rgba(0, 0, 0, 0.4);*/
+/*}*/
+
 .filter-checkbox:checked+.filter-label::before {
     position: absolute;
     top: 0;
@@ -889,7 +893,6 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-
 .filter-radio+.filter-label::before {
     content: "";
     position: absolute;
@@ -901,6 +904,10 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     opacity: 0.8;
 }
+
+/*.filter-radio:focus+.filter-label {*/
+    /*outline: 1px solid rgba(0, 0, 0, 0.4);*/
+/*}*/
 
 .filter-radio:checked+.filter-label::after {
     content: "";
@@ -1818,6 +1825,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     margin-bottom: 60px;
     padding: 0;
@@ -1916,6 +1925,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 548px;
     margin: 0;
     margin-top: 38px;
@@ -1937,6 +1948,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 525px;
     margin: 0;
     padding: 0;
@@ -2015,6 +2028,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 135px;
     margin: 0;
     margin-right: 116px;
