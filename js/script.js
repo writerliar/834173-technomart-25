@@ -5,6 +5,9 @@ var form = document.querySelector(".feedback-form");
 var userName = document.querySelector("[name=name]");
 var email = document.querySelector("[name=email]");
 var message = document.querySelector("[name=message]");
+var mapLink = document.querySelector(".mini-map");
+var popupMap = document.querySelector(".map-popup");
+var mapClose = document.querySelector(".map-close");
 
 var isStorageSupport = true;
 var storage = "";
@@ -54,6 +57,25 @@ window.addEventListener("keydown", function (evt) {
         if (popupFeedback.classList.contains("popup-show")){
             popupFeedback.classList.remove("popup-show");
             popupFeedback.classList.remove("popup-error");
+        }
+    }
+});
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupMap.classList.add("popup-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupMap.classList.remove("popup-show");
+});
+
+window.addEventListener("keydown", function(evt){
+    if (evt.keyCode === 27) {
+        if (popupMap.classList.contains("popup-show")){
+            evt.preventDefault();
+            popupMap.classList.remove("popup-show");
         }
     }
 });
