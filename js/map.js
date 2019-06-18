@@ -1,6 +1,6 @@
 var mapLink = document.querySelector(".mini-map");
 var popupMap = document.querySelector(".map-popup");
-var mapClose = document.querySelector(".btn-close");
+var mapClose = document.querySelector(".map-close");
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
